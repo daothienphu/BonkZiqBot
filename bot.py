@@ -27,6 +27,8 @@ client = discord.Client()
 #     members = '\n - '.join([member.name for member in guild.members])
 #     print(f'Guild Members:\n - {members}')
 
+print("bot active")
+
 @bot.command(name='bonkziq')
 async def nine_nine(ctx):
     ziq_bonks = [
@@ -37,6 +39,6 @@ async def nine_nine(ctx):
     ]
 
     response = random.choice(ziq_bonks)
-    await ctx.send(response, file=discord.File('bonkziq.png'))
+    await ctx.send(response, file=discord.File('image0.gif'))
 
 bot.run(TOKEN)
